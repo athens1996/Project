@@ -7,8 +7,5 @@ import com.Third.Final.controller.model.Book;
 public interface BookService {
 	List<Book>get();
 
-	static Book save(Book bookObj) {
-		
-		return null;
-	}
+
 }
