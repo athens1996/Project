@@ -1,5 +1,4 @@
 
-
 package com.Third.Final.controller.model;
 
 import javax.persistence.Column;
@@ -19,11 +18,11 @@ public class Book {
 	private int Bookid;
 
 	@Column
-	public String Author_name;
+	 String Author_name;
 	@Override
 	public String toString() {
 		
-		return "Book [Bid=" + Bookid + ", bname=" + Author_name + "]";
+		return "Book [Bid=" + Bookid + ", Author_name=" + Author_name + "]";
 	}
 	public int getBid() {
 		return Bookid;
@@ -31,10 +30,10 @@ public class Book {
 	public void setBid(int bid) {
 		Bookid = bid;
 	}
-	public String getBname() {
+	public String getAuthor_name() {
 		return Author_name;
 	}
-	public void setBname(String bname) {
-		this.Author_name = bname;
+	public void Author_name(String Author_name) {
+		this.Author_name = Author_name;
 	}
 }
