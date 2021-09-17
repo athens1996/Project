@@ -1,4 +1,5 @@
 
+
 package com.Third.Final.controller.model;
 
 import javax.persistence.Column;
@@ -8,31 +9,32 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+
 @Table(name="book")
+@Entity
 public class Book {
 @Id 
 @GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column
-	private int Bid;
+	private int Bookid;
 
 	@Column
-	public String bname;
+	public String Author_name;
 	@Override
 	public String toString() {
 		
-		return "Book [Bid=" + Bid + ", bname=" + bname + "]";
+		return "Book [Bid=" + Bookid + ", bname=" + Author_name + "]";
 	}
 	public int getBid() {
-		return Bid;
+		return Bookid;
 	}
 	public void setBid(int bid) {
-		Bid = bid;
+		Bookid = bid;
 	}
 	public String getBname() {
-		return bname;
+		return Author_name;
 	}
 	public void setBname(String bname) {
-		this.bname = bname;
+		this.Author_name = bname;
 	}
 }
